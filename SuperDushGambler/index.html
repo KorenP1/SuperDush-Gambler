@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>SuperDush Gambler</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  </head>
+
+  <body>
+
+    <span class="color">SuperDush Gambler</span>
+
+
+    <button id="creditsButton" class="fixed" onclick="collectCredits()">Unable To Login</button>
+
+    <div class="main-div fixed">
+      <div class="settings">
+        <div id="CreditsCounter">Credits: 0</div>
+        <div></div>
+        <label>$</label>
+        <input id="bet-input" type="text" value=1>
+        <button onclick="betMultiplier(0.5);">1/2</button>
+        <button onclick="betMultiplier(2);">2x</button>
+        <button onclick="maxCredits();">Max</button>
+        <div id="range-output">Mine Count: 1</div>
+        <input id="range-input" name="range-input" type="range" min="1" max="24" value="1" onchange="updateTextInput(this.value);">
+        <div class="start-button-div" onclick="startGame();"><button>Start Game</button></div>
+      </div>
+
+      <div id="div-wrapper" class="div-wrapper">
+        <div id="0" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="1" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="2" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="3" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="4" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="5" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="6" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="7" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="8" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="9" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="10" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="11" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="12" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="13" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="14" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="15" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="16" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="17" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="18" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="19" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="20" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="21" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="22" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="23" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+        <div id="24" onclick="submit(this);"><img src="img/question.png"><circle/></div>
+      </div>
+
+      <div class="cashout">
+        <div id="currBet">Bet: 0.00 Mines: 0</div>
+        <div id="stats">0.00 (0.00x)</div>
+        <div><button onclick="cashout()">Cashout</button></div>
+      </div>
+
+    </div>
+
+    <button onclick="window.location='html/leaderboards.html'" class="leaderboards">Leaderboards -></button>
+
+    <div id="fade" class="center-div fixed">
+      <div class="fixed dim"></div>
+        <img src="img/superman.png" class="rotate small-size">
+        <h1 class="loading">Loading...</h1>
+        <h1 class="by fixed">By KorenP</h1>
+      </div>
+    </div>
+
+    <script src="js/confetti.js"></script>
+    <script src="js/index.js"></script>
+
+  </body>
+
+</html>
