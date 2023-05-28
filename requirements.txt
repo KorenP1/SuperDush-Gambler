@@ -1,7 +1,4 @@
 flask
 psycopg2
-hashlib
 pyjwt
 datetime
-random
-os
