@@ -1,6 +1,6 @@
 # MineSweeper Gambling Game
 
-In order to run you need to have running postgres db \
+In order to run the game you need to have running postgres db \
 You can run it by this command: \
 `docker run -it --rm --name postgres -e POSTGRES_PASSWORD=password -p 5432:5432 docker.io/postgres`
 
